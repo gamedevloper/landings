@@ -1,0 +1,11 @@
+/logs/*
+/node_modules/
+/src/bower_components/
+/server/levels/all.json
+/.tmp
+npm-debug.log
+.DS_Store
+.idea
+*.psd
+*.swp
+*.swo
