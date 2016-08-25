@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title translate>Diamonds: Pirate Adventure</title>
+<link rel="stylesheet" type="text/css" href="css/style-7104c9de3d.css" media="all" />
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-83130543-2', 'auto');
+ ga('send', 'pageview');
+
+</script>
+</head>
+	<body>
+		<div class="top-frame">
+			<header>
+				<ul>
+					<li translate>About us</li>
+					<li translate>How to play</li>
+					<li translate>Help</li>
+					<li translate>Community</li>
+					<li translate>Play</li>
+				</ul>
+			</header>
+            <form action="<%= serverUrl%>" method=get class=play>
+                <button class="btn primary-btn"
+                        type="submit" translate>Play</button>
+            </form>
+		</div>
+		<div class="content-frame">
+			<div class="content-block">
+				<p translate>Diamonds are waiting for you!</p>
+				<div class="play-now-block">
+				<div class="play-now">
+					<div class="ic-raccoon"></div>
+                    <form action="<%= serverUrl%>" method=get class=play>
+                        <button class="btn secondary-btn"
+                                type="submit" translate>Play now!</button>
+                    </form>
+				</div>
+				<div class="play-now">
+					<div class="ic-sloth"></div>
+                    <form action="<%= serverUrl%>" method=get class=play>
+                        <button class="btn secondary-btn"
+                                type="submit" translate>Play now!</button>
+                    </form>
+				</div>
+				<div class="social">
+					<p>Available now:</p>
+					<div class="ic-social"></div>
+				</div>
+				</div>
+				<div class="description" translate>Join our pirate crew on their unforgettable adventures. Collect diamonds and amazing artifacts. Play with your friends and enjoy discovery of new islands! <b>Adventures await!</b></div>
+				<div class="map-slider">
+					<div class="slider-title" translate>Marvelous maps</div>
+					<button class="btn left-arrow-btn"></button>
+					<div class="map1"></div>
+					<div class="map2" style="display: none;"></div>
+					<div class="map3" style="display: none;"></div>
+					<div class="map4" style="display: none;"></div>
+					<div class="map5" style="display: none;"></div>
+					<div class="map6" style="display: none;"></div>
+					<button class="btn right-arrow-btn"></button>
+					<div class="slider-buttons">
+						<div class="btn slider-btn slider-btn-active"></div>
+						<div class="btn slider-btn"></div>
+						<div class="btn slider-btn"></div>
+						<div class="btn slider-btn"></div>
+						<div class="btn slider-btn"></div>
+						<div class="btn slider-btn"></div>
+					</div>
+				</div>
+				<div class="text-block">
+					<div class="ic-1"></div>
+					<span translate><b>Diamonds: Pirate Adventure</b><br>is waiting for brave heroes!<br>Find all treasures and become legendary Pirate of Seven Seas!</span>
+				</div>
+				<div class="bust">
+					<p translate>Choose a player</p>
+					<div class="ic-gun"></div>
+					<p translate>Water Cannon</p><br>
+					<span translate>Removes the vertical row</span>
+				</div>
+				<div class="history-block">
+					<p translate>History</p><br>
+				    <span translate>Every map has a Treasure. Can you find all of them? Travel the world and visit the most remote and mysterious places where pirates could hide their treasures!</span>
+					<div class="ic-2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="botom-frame">
+			<div class="shark"></div>
+			<div class="stones"></div>
+			<div class="separator"></div>
+			<footer>
+				<ul>
+					<li translate>Community</li>
+					<li translate>Play</li>
+					<li translate>Tech support</li>
+					<br><p translate>2016 Pirate Cats<br>All rights reserved.</p>
+				</ul>
+				<div class="catpirat-logo"></div>
+			</footer>
+		</div>
+
+    <div class="modalContainer">
+        <div class="subscribeModal">
+            <div class="popupBg"></div>
+
+            <div class="popupClose"></div>
+
+            <div class="popupContent">
+                <div class="text" translate>Введите номер телефона<br>для получения доступа</div>
+
+                <input type="tel" class="phone" placeholder="8XXXXXXXXXX">
+
+                <button class="okBtn btn green big">
+                    <span class="btnBack"></span>
+                    <span class="btnTitle" translate>ОК</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $('.play').submit(function(e) {
+        var form = this;
+        e.preventDefault();
+
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'landing',
+            eventAction: 'play',
+            eventLabel: 'cats-landing',
+            hitCallback: function () {
+                form.submit();
+            }
+        });
+    });
+</script>
+	</body>
+</html>
